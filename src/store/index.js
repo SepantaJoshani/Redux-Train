@@ -14,6 +14,12 @@ const counterReducer = (state = { counter: 0 }, action) => {
       };
     }
 
+    case "increase":{
+        return {
+            counter:state.counter + action.payload
+        }
+    }
+
     default:
       return state;
   }
