@@ -9,7 +9,7 @@ function App() {
   const auth = useSelector((state) => state.auth.auth);
   return (
     <Fragment>
-      {auth && <Header />}
+      { <Header />}
       {auth ? <UserProfile /> : <Auth />}
       <Counter />
     </Fragment>
